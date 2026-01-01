@@ -30,7 +30,7 @@
   .slide-controls button { font-size:2rem; cursor:pointer; margin:0 10px; }
 
   .video-section { text-align:center; margin:2rem 0; }
-  .video-section video { border-radius:15px; }
+  .video-section iframe { border-radius:15px; }
 
   .music-controls { text-align:center; margin:2rem 0; }
 
@@ -75,10 +75,14 @@
 </section>
 
 <section class="video-section">
-  <h2>My video for Our new Year❤️</h2>
-  <video width="80%" controls>
-    <source src="her/for-her.mp4" type="video/mp4">
-  </video>
+  <h2>My video for Our New Year ❤️</h2>
+  <iframe width="80%" height="450" 
+          src="https://www.youtube.com/embed/4T-OaICDcQE" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
 </section>
 
 <section class="music-controls">
@@ -138,7 +142,7 @@ favorites.forEach(item=>{
     </div>`;
 });
 
-/* ✅ SLIDESHOW — MANUAL ONLY (FIXED) */
+/* ✅ SLIDESHOW — MANUAL ONLY */
 const slides = [
   { img:"her/slide-3.jpg", text:"my favorite picture😭" },
   { img:"her/slide-3.png", text:"u look amazing in this" },
